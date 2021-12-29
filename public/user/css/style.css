@@ -1,0 +1,170 @@
+    #watch {
+        color: rgb(252, 150, 65);
+        position: absolute;
+        z-index: 1;
+        height: 40px;
+        width: 700px;
+        overflow: show;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 10vw;
+        -webkit-text-stroke: 3px rgb(210, 65, 36);
+        text-shadow: 4px 4px 10px rgba(210, 65, 36, 0.4),
+            4px 4px 20px rgba(210, 45, 26, 0.4),
+            4px 4px 30px rgba(210, 25, 16, 0.4),
+            4px 4px 40px rgba(210, 15, 06, 0.4);
+    }
+    body {
+    background: #eee
+    }
+
+    .card {
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer
+    }
+
+    .card:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #E1BEE7;
+    transform: scaleY(1);
+    transition: all 0.5s;
+    transform-origin: bottom
+    }
+
+    .card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #8E24AA;
+    transform: scaleY(0);
+    transition: all 0.5s;
+    transform-origin: bottom
+    }
+
+    .card:hover::after {
+    transform: scaleY(1)
+    }
+
+    .fonts {
+    font-size: 11px
+    }
+
+    .social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0
+    }
+
+    .social-list li {
+    padding: 10px;
+    color: #8E24AA;
+    font-size: 19px
+    }
+
+    .buttons button:nth-child(1) {
+    border: 1px solid #8E24AA !important;
+    color: #8E24AA;
+    height: 40px
+    }
+
+    .buttons button:nth-child(1):hover {
+    border: 1px solid #8E24AA !important;
+    color: #fff;
+    height: 40px;
+    background-color: #8E24AA
+    }
+
+    .buttons button:nth-child(2) {
+    border: 1px solid #8E24AA !important;
+    background-color: #8E24AA;
+    color: #fff;
+    height: 40px
+    }
+
+
+  .container {
+      width: 250px;
+      height: 150px;
+      display: block;
+      margin: 0 auto;
+    }
+  
+  .outer {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 150px !important; /* any size */
+    max-height: 150px !important; /* any size */
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    position: relative;
+    }
+    
+  .inner {
+    background-color: #ff1414;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .inner:hover {
+    background-color: #5555ff;
+  }
+
+  /* Form Upload Image */
+  .inputfile {
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+  }
+  .inputfile + label {
+      font-size: 1.25rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      padding-top: 10px;
+      pointer-events: none;
+      cursor: pointer;
+      line-height: 50px;
+      text-align: center;
+  }
+  .inputfile + label svg {
+      fill: #fff;
+  }
+
+  input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #5588ff;
+    color: white;
+}
