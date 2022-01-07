@@ -1,5 +1,7 @@
 <h1>How To Clone This Project ?</h1>
-- Download repo ini dengan cara click tombol hijau diatas 
+
+- Download repo ini dengan cara click tombol hijau diatas : 
+  ![image](https://user-images.githubusercontent.com/80162410/148528984-b0d00847-1dd3-40e2-ad6e-ad168e834cc1.png)
 - Lalu Extract File tersebut di local folder kalian masing-masing :![image](https://user-images.githubusercontent.com/80162410/148527430-4c28ce72-ac83-4faf-ba0f-d053163f782f.png)
 - Setelah itu masuk ke kode editor kalian masing-masing 
 - Buatlah database dan sesuaikan dengan file .env yang baru didownload 
